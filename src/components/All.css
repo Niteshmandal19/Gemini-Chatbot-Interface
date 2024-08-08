@@ -1,0 +1,107 @@
+.mid-section{
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.box-all{
+    background-color: rgb(18, 18, 18);
+    width: 55%;
+    min-width: 110vh;
+    padding: 5px;
+    height: 100%;
+    margin: auto;
+
+}
+.intro{
+    margin-bottom: 65px;
+    margin-top: 30px;
+}
+.intro h1{
+    font-size: 56px;
+    font-weight: 450;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -2.6px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    padding: 8px;
+}
+.mini{
+    padding: 12px;
+    border-radius: 12px;
+    position: relative;
+    height: 175px;
+    background-color: #202020;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.mini:hover{
+    background-color: #303030;
+}
+.mini p{
+    position: relative;
+    translate: 0px -20px;
+    font-size: 15px;
+}
+.icon-boxes{
+    position: absolute;
+    border-radius: 50px;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(16, 16, 16);
+    width: 25px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.bottom-all{
+    position: relative;
+    background-color: rgb(23, 23, 73);
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+.bottom-all-last{
+    display: flex;
+    justify-content: end;
+    gap: 6px;
+    height: 25px;
+}
+.bottom-all-last div{
+    background-color: rgb(36, 36, 113);
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.text{
+    font-size: 12px;
+    font-weight: 400;
+}
+.text a{
+    font-size: 12px;
+    font-weight: 400;
+}
+#gradient-name1{
+    background: linear-gradient(90deg, #4a90e2 0%, #b456dc 50%, #fa7373 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+}
+#gradient-name2{
+    background: #3e3e3e;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+}

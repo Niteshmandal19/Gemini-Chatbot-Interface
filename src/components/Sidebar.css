@@ -1,0 +1,314 @@
+.box-navbar{
+    height: 100%;
+    max-height: 100vh;
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13.5px;
+    color: white;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    width: 45px;
+}
+
+.open .box-navbar{
+    width: 273px;
+}
+.nav-icon-boxes{
+    border-radius: 50px;
+    background-color:  rgb(30, 30, 30);
+    width: 25px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 25px;
+}
+.open .nav-icon-boxes{
+    justify-content: flex-start;
+    padding-left: 14px;
+}
+.open .nav-icon-boxes svg {
+    margin-right: 15px;
+}
+.top-navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.open .top-navbar{
+    align-items: flex-start;
+}
+#menu-icon{
+    font-size: larger;
+    position: sticky;
+}
+#new-chat-icon{
+    color: rgb(90, 90, 90);;
+    margin-top: 50px;
+    font-size: large;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(24, 24, 24);
+    white-space: nowrap;
+}
+.open #new-chat-icon{
+    color: rgb(111, 111, 111);;
+    background-color: rgb(24, 24, 24);
+    white-space: nowrap;
+    border-radius: 50px;
+    padding: 9px 16px ;
+    width: fit-content;
+    cursor: pointer;
+    height: 20px;
+}
+.open #new-chat-icon span{
+    font-size: 14px;
+    margin-left: 3px;
+    font-weight: 600;
+}
+.open .expand-new-chat{
+    left: 180px;
+    top: 120px;
+}
+.recents{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 1px 1px 10px;
+}
+.recent-history li:hover .vertIcon {
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 19px;
+    opacity: 1;
+}
+.vertIcon{
+    opacity: 0;
+    
+}
+.recent-history ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+    padding: 1px;
+    margin-left: -5px;
+    margin: 0;
+    margin-top: -12px;
+}
+.recent-history ul li{
+
+    font-size: 14px;
+    width: 245px;
+    font-weight: 500;
+    align-items: center;
+    padding: 8px 12px;
+    color: #d7d7d7;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: transform 2s ease-in-out;
+}
+.open .recent-history ul li{
+    opacity: 1;
+    transform: translateX(0);
+}
+.recent-history ul li:hover{
+    background-color: rgb(42, 42, 42);
+}
+.recent-history svg{
+    margin-right: 15px;
+    font-size: 16px;
+}
+.open .show-history {
+    font-size: 12px;
+}
+.show-history svg{
+    font-size: 20px;
+}
+
+#menu-icon:hover,#help-icon:hover,#activity-icon:hover,#setting-icon:hover{
+    background-color: rgb(42, 42, 42);
+}
+.bottom-navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    transform: translateY(0);
+    transition: width 0.3s ease-in-out,transform 0.3s ease-in-out;
+}
+.bottom-navbar div{
+    font-size: medium;
+    padding: 5px;
+}
+.open .bottom-navbar{
+    transform: translateY(-10px);
+}
+.open .bottom-navbar .nav-icon-boxes{
+    width: 245px;
+}
+.open .bottom-navbar span{
+    font-size: 13px;
+}
+.open .location{
+    font-size: 11.5px;
+    display: flex;
+    margin-left: 10px;
+}
+.open .location li:nth-child(2){
+    list-style: none;
+}
+.open .location a{
+    font-size: 10.5px;
+}
+.open #help-icon div{
+    font-size: 14px;
+    font-weight: 500;
+}
+.open .expand-help{
+    left: 320px;
+    top: 20px;
+    height: 20px;
+}
+.open #activity-icon div{
+    font-size: 14px;
+    font-weight: 500;
+}
+.open .expand-activity{
+    left: 320px;
+    top: 60px;
+    height: 20px;
+}
+.open #settings-icon div{
+    font-size: 14px;
+    font-weight: 500;
+}
+.open .expand-settings{
+    left: 320px;
+    top: 100px;
+    height: 20px;
+}
+
+/* .............Hover.............. */
+
+/* menu hover */
+
+#menu-icon:hover .expand-menu{
+    display: block;
+    opacity: 1;
+}
+
+.expand-menu{
+    position: absolute;
+    display: none;
+    top: 60px;
+    left: 60%;
+    padding: 5px;
+    background-color: #4a4a4a;
+    color: white;
+    translate: -30px -10px;
+    border-radius: 5px;
+    font-size: 11.5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+
+#new-chat-icon:hover .expand-new-chat{
+    display: block;
+    opacity: 1;
+}
+
+.expand-new-chat{
+    position: absolute;
+    top: 162px;
+    left: 60%;
+    padding: 5px;
+    background-color: #4a4a4a;
+    color: white;
+    translate: -30px -10px;
+    border-radius: 5px;
+    font-size: 11.5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+
+#help-icon:hover .expand-help{
+    display: block;
+    opacity: 1;
+    font-size: 11.5px;
+}
+
+.expand-help{
+    position: absolute;
+    display: none;
+    bottom: 140px;
+    left: 105px;
+    padding: 1px;
+    background-color: #4a4a4a;
+    color: white;
+    translate: -30px -10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+
+#activity-icon:hover .expand-activity{
+    display: block;
+    opacity: 1;
+    font-size: 11.5px;
+}
+
+.expand-activity{
+    position: absolute;
+    display: none;
+    bottom: 100px;
+    left: 105px;
+    padding: 1px;
+    background-color: #4a4a4a;
+    color: white;
+    translate: -30px -10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+
+#setting-icon:hover .expand-settings{
+    display: block;
+    opacity: 1;
+    font-size: 11.5px;
+}
+
+.expand-settings{
+    position:absolute;
+    display: none;
+    bottom: 56px;
+    left: 105px;
+    padding: 1px;
+    background-color: #4a4a4a;
+    color: white;
+    translate: -30px -10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+/* .................................................................... */
+/* open sidebar */
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dismiss Example</title>
+    <style>
+        .message-box {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        .dismiss-button {
+            color: blue;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box" id="messageBox">
+        Humans review some saved chats to improve Google AI. To stop this for future chats, turn off Gemini Apps activity. If this setting is on, don't enter info that you wouldn't want reviewed or used. how it works
+        <br><br>
+        <span class="dismiss-button" onclick="dismissMessage()">Dismiss</span>
+    </div>
+
+    <script>
+        function dismissMessage() {
+            document.getElementById('messageBox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
